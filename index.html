@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ROBIN Gaming</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }-
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0b12;
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            background: #ff4500;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #111;
+        }
+
+        /* Home */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #11111f, #202040);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #ccc;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 35px;
+            background: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #ff6a00;
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about {
+            background: #151522;
+        }
+
+        /* Game Cards */
+        .games {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #1c1c2b;
+            width: 250px;
+            padding: 30px 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius:10px;
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px #000;
+        }
+
+        .card h3 {
+            color: #ff6500;
+        }
+
+        /* Footer */
+        footer {
+            background: #080808;
+            text-align: center;
+            padding: 25px;
+            color: #aaa;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>🎮 ROBIN GAMING</h1>
+        <p>Gaming • Entertainment • Fun</p>
+
+        <a href="#games" class="btn">EXPLORE GAMES</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About ROBIN</h2>
+
+        <p>
+            Welcome to ROBIN Gaming!
+            Yahan gaming videos, updates aur entertainment milega.
+        </p>
+    </section>
+
+    <section id="games">
+        <h2>🔥 Popular Games</h2>
+
+        <div class="games">
+
+            <div class="card">
+                <img src="images/bgmi.jpg" alt="BGMI">
+                <h3>🎯 BGMI</h3>
+                <p>Battle Royale Gaming</p>
+            </div>
+
+            <div class="card">
+                <img src="images/freefire.jpg" alt="Free Fire">
+                <h3>⚔️ Free Fire</h3>
+                <p>Fast Action Gaming</p>
+            </div>
+
+            <div class="card">
+                <img src="images/clash.jpg" alt="Clash of Clans">
+                <h3>🏰 Clash of Clans</h3>
+                <p>Strategy & Battle</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 ROBIN Gaming
+    </footer>
+
+</body>
+</html>
